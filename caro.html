@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>By Carol.A</title>
+
+  <!-- Tipografía elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 250px;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      animation: fadeIn 2s ease;
+    }
+
+    /* PRODUCTOS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      overflow: hidden;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* BOTONES */
+    .btn {
+      padding: 12px 25px;
+      border: 1px solid #1a1a1a;
+      background: transparent;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1a1a1a;
+      color: white;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    /* INSTAGRAM */
+    .instagram {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: #E1306C;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    /* ANIMACIÓN */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero" style="background:#f5f5f0;">
+
+  <img src="logo.caro.png" alt="By Carol.A Logo" style="width: 350px; margin-bottom: 30px;">
+
+  <h1 style="font-size: 28px; font-weight: 400;">
+    Detalles que hacen especial cada momento
+  </h1>
+
+  <button class="btn">Ver productos</button>
+
+</section>
+
+  <!-- PRODUCTOS -->
+  <section>
+    <h2>Productos</h2>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1602526219043-8b2c3c9e64b4">
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1616628182506-cc6d8a4f3b43">
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+      </div>
+    </div>
+  </section>
+
+  <!-- INSPIRACIÓN -->
+  <section style="background:#f5f5f0;">
+    <h2>Inspiración</h2>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1602524208700-8786d52a8b73">
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1602526219043-8b2c3c9e64b4">
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section>
+    <h2>Sobre mí</h2>
+    <p>
+      Soy Carola, y creo productos pensados para acompañar tus momentos más especiales,
+      con detalles únicos y hechos con amor.
+    </p>
+  </section>
+
+  <!-- CONTACTO -->
+  <section style="background:#f5f5f0;">
+    <h2>Contacto</h2>
+    <p>Hacé tu pedido o consulta directamente</p>
+    <button class="btn">Contactar</button>
+  </section>
+
+  <!-- BOTONES -->
+  <a class="whatsapp" href="https://wa.me/5493364674477" target="_blank">💬</a>
+  <a class="instagram" href="https://instagram.com/by_carol.a" target="_blank">📸</a>
+
+</body>
+</html>

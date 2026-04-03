@@ -8,6 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
   <style>
+    /* HERO - Versión con logo de fondo */
+    .hero {
+      height: 100vh;
+      /* Usamos el nombre exacto de tu archivo en GitHub */
+      background: url("logo.caro.png") no-repeat center center;
+      background-size: contain; 
+      background-color: #ffffff; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -177,7 +191,7 @@
   </section>
 
   <!-- CONTACTO -->
-  <section style="background:#f5f5f0;">
+  <section class="hero">
     <h2>Contacto</h2>
     <p>Hacé tu pedido o consulta directamente</p>
     <button class="btn">Contactar</button>
